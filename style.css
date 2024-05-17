@@ -5,7 +5,9 @@ body{
     color: #1e1e2A; 
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 /*Headear*/
 .header-container {
     height: 80vh;
@@ -21,6 +23,59 @@ body{
     padding: 0 112px;
     position: relative;
 }
+
+/*area menu*/
+
+.area-menu{
+    padding: 10px 50px;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between ;
+    background-color: yellow;
+    font-family: 'Roboto', sans-serif ;
+    width: 100%;
+    height: 120px;
+}
+ 
+.area-menu > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-menu a{
+    text-decoration: none;
+    color:#1e1e2A;
+    margin: 5px;
+    padding: 8px 12px;   
+    border-radius: 10%;
+    transition: 300ms;
+    
+   
+}
+
+.area-menu a:hover{
+    text-decoration: none;     
+}
+.icone{
+
+    width: 125px;
+    position: relative;
+    z-index: 1;
+   
+}
+
+.icone svg{
+    position: absolute;
+    top:0px;
+    transition: 300ms;
+}
+.icone svg:hover{
+    opacity: 0;
+}
+
+/*fim area menu*/
 .fade-active{
     animation: 3000ms fade;
 }
@@ -84,7 +139,8 @@ h2 {
 }
 
 a:hover{
-    background: white;
+    background: black;
+    color: yellow;
 }
 /*menu*/
 
