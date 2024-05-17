@@ -333,3 +333,78 @@ a:hover{
     margin: 30px 0 0 0;
     font-family: 'Roboto', sans-serif ;
 }
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 20px;
+    }
+    .card, .card2 {
+        width: 200px;
+        height: 200px;
+    }
+    .card-wrapper::before, .card-wrapper2::before {
+        height: 150px;
+        width: 150px;
+    }
+    .card-wrapper h2, .card-wrapper2 h2 {
+        font-size: 24px;
+    }
+    .social-media a {
+        padding: 0.5rem 1rem;
+        margin: 0.25rem;
+    }
+    .sobre-mim {
+        margin: 20px 10px;
+    }
+}
+@media (max-width: 480px) {
+    .header-container {
+        padding: 0 10px;
+    }
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    .header h2 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .social-media a {
+        padding: 0.5rem 0.5rem;
+        font-size: 14px;
+    }
+    .sobre-mim {
+        margin: 20px 5px;
+    }
+    .sobre {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .card, .card2 {
+        width: 150px;
+        height: 150px;
+    }
+    .card-wrapper::before, .card-wrapper2::before {
+        height: 100px;
+        width: 100px;
+    }
+    .card-wrapper h2, .card-wrapper2 h2 {
+        font-size: 18px;
+    }
+    .card-wrapper p, .card-wrapper2 p {
+        font-size: 12px;
+    }
+    .card-container, .card-container2 {
+        flex-direction: column;
+    }
+    .footer {
+        height: auto;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+}
