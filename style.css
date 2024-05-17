@@ -7,38 +7,71 @@ body{
 
 
 /*Headear*/
-.header-container{
+.header-container {
     height: 80vh;
     width: 100vw;
     background-color: yellow;
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-self: flex-start;
     box-sizing: border-box;
     padding: 0 112px;
     position: relative;
 }
+.fade-active{
+    animation: 3000ms fade;
+}
+@keyframes fade{
+0%{
+    opacity: 0;
+    transform: translateY(-50%);
+}
+100%{
+    opacity: 1;
+    transform: translateY(0);
+}
 
-h1{
-    font-size: 50px;
+}
+.profile-image {
+    width: 200px; 
+    height: 200px; 
+    overflow: hidden; 
+    margin-right: 20px;
+}
+
+.profile-image img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 42px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin: 0; /* Adiciona isso para remover margens padrão */
 }
-h2{
+
+h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
+    margin: 0; /* Adiciona isso para remover margens padrão */
 }
-.social-midia{
-    margin-top: 1rem ;
+
+.social-media {
+    margin-top: 1rem;
     display: flex;
 }
 
-.social-midia a{
+.social-media a {
     text-decoration: none;
     color: #1e1e2A;
     padding: 1rem 4rem;
@@ -49,12 +82,45 @@ h2{
     justify-content: center;
     transition: .3s ease-in-out;
 }
+
 a:hover{
     background: white;
 }
 /*menu*/
 
+/*Sobre mim e tecnologias*/
 
+.sobre-mim{
+    margin: 200px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif ;
+    
+    
+}
+
+.sobre  {
+    flex: 1;
+    margin-bottom: 50px;
+    margin-right: 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hobbies {
+    margin-bottom: 50px; 
+}
+
+.tecnologia {
+    margin-bottom: 50px; 
+}
+
+.linha{
+    height: 1px; 
+    width: 30%; 
+    background-color: black;
+    margin-top: 50px; 
+}
 
 /*card*/
 
@@ -249,6 +315,11 @@ a:hover{
     visibility: visible;
     font-size: 14px;
 }
+.img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
 
 
 .footer{
@@ -260,4 +331,5 @@ a:hover{
     justify-content: center;
     color: #1e1e2A;
     margin: 30px 0 0 0;
+    font-family: 'Roboto', sans-serif ;
 }
