@@ -35,7 +35,7 @@ html{
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: yellow; 
+    background-color: yellow;   
     color: white;
     position: relative;
 }
@@ -190,7 +190,7 @@ h1 {
 }
 
 h2 {
-    text-transform: uppercase;
+    
     letter-spacing: 4px;
     margin: 0; /* Adiciona isso para remover margens padrão */
 }
@@ -250,6 +250,12 @@ a:hover{
     width: 30%; 
     background-color: black;
     margin-top: 50px; 
+}
+.Fale{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 /*card*/
@@ -432,23 +438,162 @@ a:hover{
 
 .card2:hover {
     filter: unset;
+    background: none;
 }
 
 .card2:hover > .card-link > .card-wrapper2::before {
     height: 200px;
     width: 200px;
     opacity: 1;
+    background: none;
 }
 
 .card2:hover > .card-link > .card-wrapper2 p {
     opacity: 1;
     visibility: visible;
     font-size: 14px;
+    background: none;
 }
 .img{
     width: 200px;
     height: auto;
     border-radius: 50%;
+}
+
+
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #000;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card3 {
+    background-color: wheat;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: black;
+}
+
+.card3 img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+.card-content a, .card-content p {
+    display: flex; /* Define como flex container */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: flex-start; /* Alinha itens à esquerda */
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.card-content a img, .card-content p img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}.contact-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #000;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card3 {
+    background-color: wheat;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: black;
+}
+
+.card3 img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+.card-content a, .card-content p {
+    display: flex; /* Define como flex container */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    justify-content: flex-start; /* Alinha itens à esquerda */
+    margin: 20px 0;
+    color: black;
+    background: none;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.card-content a img, .card-content p img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.card-content a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
